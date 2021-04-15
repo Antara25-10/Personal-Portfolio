@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.js"></script>
+    <title>Portfolio</title>
+  </head>  
+<body>
+    <div class="color-bkg">
+    <div class="wave">
+        
+        <section class="toggle-container">
+            <input type="checkbox" id="switch" name="theme"/><label for="switch">Toggle</label>
+        </section>
+       <h1>HELLO, I'M A FRONT END DEVELOPER.</h1>
+    </div>
+    <div class="flex-container">
+        <div class="box1"><h1>ABOUT</h1><img src="Antara.jpg"/><br><p>I'm Antara Gupta and I love to design web pages.<br>I love to code,capture and paint.<br>To know more about me,you all can check my <a href="https://drive.google.com/file/d/1N_F8adVfEZ4UwO7eEP0jX9-pmZs4nabA/view?usp=drivesdk">Resume </a>.</p></div>
+        <div class="box2"><h1>PROJECTS:</h1><br><p><a href="https://github.com/Antara25-10?tab=repositories">Web Projects</a><br><a href="https://drive.google.com/folderview?id=1e51b5kZkQVbp9GYJo2vykDR_CIhStvdG">Photography</a><br><a href="https://drive.google.com/folderview?id=1g-SrUgtFtCH5duX-VPnMnv5s-uyNSbkI">Painitings</a></p></div>
+    </div>
+    
+    <div class="footer"> 
+        <a href="https://github.com/Antara25-10" target="_blank"><img src="github.png"/>
+        </a>
+        <a href="www.linkedin.com/in/antara-gupta-0a624b1b8" target="_blank"><img src="linkedin.jfif" font-size:50px/>
+        </a>
+        <a href="#"><img src="email.png"/>
+        </a>
+    </div>    
+    <div class="end">
+        <h5>Copyright 2021 Antara Gupta</h5>
+    </div>
+    <script>
+        var checkbox=document.querySelector('input[name=theme');
+
+        checkbox.addEventListener('change',function(){
+            if(this.checked){
+                trans()
+                document.documentElement.setAttribute('data-theme','dark')
+             
+            }else{
+                trans()
+                document.documentElement.setAttribute('data-theme','light')
+            }
+        })
+
+        let trans=() => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(()=>{
+                document.documentElement.classList.remove('transition')
+            },1000)
+        }
+    </script>
+    </div>
+</body>  
+</html>
