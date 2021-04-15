@@ -8,4 +8,4 @@ AUTHOR This portfolio is created by Antara Gupta
 
 Source:https://github.com/Antara25-10/Personal-Portfolio
 
-Deployed link:
+Deployed link:https://antara25-10.github.io/Personal-Portfolio/
